@@ -20,3 +20,6 @@ apt-get update
 apt-get install -y cuda-toolkit-7-5
 echo 'export PATH=/usr/local/cuda/bin:$PATH' >> /home/vagrant/.bashrc
 echo 'export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH' >> /home/vagrant/.bashrc
+
+shred -u -z cuda-repo-ubuntu1404-7-5-local_7.5-18_amd64.deb
+shred -u -z cmake-3.13.2-Linux-x86_64.sh
