@@ -31,8 +31,8 @@ Ubuntu 16.04
 ```vagrant
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu1604_cuda80"
-  config.vm.box_url = ""
-  config.vm.box_download_checksum = ""
+  config.vm.box_url = "https://uofi.box.com/shared/static/cx8flnn4qv4c4fjchchrrrcum4x0f3fc.box"
+  config.vm.box_download_checksum = "d906d846359e28e637d2aa1b327590d4"
   config.vm.box_download_checksum_type = "md5"
 end
 ```
