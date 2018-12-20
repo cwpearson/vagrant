@@ -19,6 +19,24 @@ Vagrant.configure("2") do |config|
 end
 ```
 
+## ubuntu1404_cuda75
+ubuntu/xenial64 20181217.0.0
+
+Ubuntu 16.04
+
+* CUDA Toolkit 8.0.61
+* CMake 3.13.2
+* gcc/g++ 5.4.0
+
+```vagrant
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu1604_cuda80"
+  config.vm.box_url = ""
+  config.vm.box_download_checksum = ""
+  config.vm.box_download_checksum_type = "md5"
+end
+```
+
 ## Creating a new Box
 
     vagrant package --output mynew.box
